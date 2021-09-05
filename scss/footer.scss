@@ -1,0 +1,30 @@
+footer {
+  .footer-content {
+    height: 125px;
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &--contact {
+      margin-top: 5px;
+
+      display: flex;
+      flex-direction: column;
+      h6 {
+        font-size: 20px;
+        text-decoration: underline;
+        margin-bottom: 5px;
+      }
+      P {
+        margin: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.story {
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  &__content {
+    background-color: rgba(0, 0, 0, 0.377);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    padding: 20px;
+
+    &__header {
+      color: rgb(255, 32, 32);
+      text-decoration: underline;
+    }
+    &__text {
+      color: white;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+
+  &__image {
+    width: 480px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &--llorona {
+      background-image: url(../images/la-llorona.jpg);
+    }
+
+    &--onna {
+      background-image: url(../images/kuchisake-onna.jpg);
+    }
+
+    &--spider {
+      background-image: url(../images/spider-bite.jpg);
+    }
+  }
+}
+
+.story:nth-child(odd) {
+  display: flex;
+  flex-direction: row-reverse;
+}

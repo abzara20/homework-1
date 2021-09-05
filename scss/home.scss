@@ -1,0 +1,53 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.377);
+  &--nospace {
+    margin-top: 0;
+  }
+  &__image {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 50px;
+
+    background-image: url(../images/pumpkin-png.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    text-align: center;
+    h1 {
+      font-size: 60px;
+      color: orange;
+    }
+    h3 {
+      font-size: 30px;
+    }
+  }
+
+  &__subtext {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 100px;
+    p {
+      font-size: 30px;
+    }
+    button {
+      border: none;
+      height: 80px;
+      width: 150px;
+      font-size: 20px;
+
+      background-color: orange;
+      padding: 20px;
+      border-radius: 25px;
+    }
+  }
+}
